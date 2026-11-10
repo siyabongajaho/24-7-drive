@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>24/7 Drive | Cabs, towing, tyre rescue and tours in Welkom</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Unbounded:wght@700;800&family=Kaushan+Script&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFD600;--ink:#000;--card:#000;--cink:#fff;--cmut:#bdbdbd;--soft:rgba(0,0,0,.13);--y:#FFD600;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--ink:#fff;--card:#161616;--soft:rgba(255,255,255,.14)}}
+:root[data-theme="dark"]{--bg:#000;--ink:#fff;--card:#161616;--soft:rgba(255,255,255,.14)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:500 16px/1.55 Manrope,system-ui,sans-serif;padding-right:18px;overflow-x:hidden}
+h1,h2,h3,.logo,.btn{font-family:Unbounded,system-ui,sans-serif;font-weight:800;letter-spacing:-.02em}
+h1,h2,h3{margin:0;line-height:1.08}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:6px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:400 27px/1 "Kaushan Script","Brush Script MT",cursive;letter-spacing:0}.logo svg{width:46px;height:46px;flex:none;filter:drop-shadow(0 3px 6px rgba(0,0,0,.3))}
+.logo em{font-style:normal;color:#D71920}
+.pill{background:#000;color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:10px 16px;border-radius:99px}
+.hgrid{display:grid;gap:26px;padding:26px 20px 110px;max-width:1080px;margin:0 auto}
+.status{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:13px;background:var(--soft);padding:6px 12px;border-radius:99px;margin:0 0 18px}
+.status i{width:9px;height:9px;border-radius:50%;background:#22c55e;animation:pulse 1.6s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 #22c55e}70%,100%{box-shadow:0 0 0 9px transparent}}
+h1{font-size:clamp(34px,9vw,70px)}
+.sub{max-width:480px;font-size:18px;margin:18px 0 0}
+.console{position:relative;margin-top:44px;background:var(--card);color:var(--cink);border-radius:30px;padding:22px;max-width:560px;width:100%;box-shadow:0 30px 60px -22px rgba(0,0,0,.5)}
+.drive{position:absolute;right:16px;top:-64px;width:170px;height:auto;animation:roll 1.5s cubic-bezier(.2,.8,.2,1) both}
+@keyframes roll{from{transform:translateX(-130vw)}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+.chip{border:1.5px solid rgba(255,255,255,.25);background:none;color:inherit;font:700 13px Manrope,sans-serif;padding:9px 13px;border-radius:99px;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--y);color:#000;border-color:var(--y)}
+label{display:block;font-size:13px;font-weight:700;color:var(--cmut);margin:14px 0 6px}
+input{width:100%;font:600 16px Manrope,sans-serif;background:rgba(255,255,255,.09);border:1.5px solid transparent;color:#fff;padding:14px 16px;border-radius:16px;outline:0}
+input::placeholder{color:#8d8d8d}
+input:focus,.chip:focus-visible,.btn:focus-visible,.pill:focus-visible{border-color:var(--y);outline:2px solid var(--y);outline-offset:2px}
+.btn{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:18px;background:var(--y);color:#000;font-size:15px;text-decoration:none;padding:17px;border-radius:18px;text-align:center}
+.btn:hover{filter:brightness(1.07)}
+.note{font-size:13px;color:var(--cmut);text-align:center;margin:12px 0 0}
+.check{height:28px;background:conic-gradient(#000 25%,#FFD600 0 50%,#000 0 75%,#FFD600 0) 0 0/28px 28px}
+section{padding:84px 0}
+h2{font-size:clamp(27px,6vw,48px);max-width:700px}
+.lead{max-width:520px;margin:14px 0 0;font-size:17px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:38px}
+.card{background:var(--card);color:var(--cink);border-radius:30px;padding:22px;display:flex;flex-direction:column}
+.art{width:100%;height:auto;margin-bottom:14px}
+.card h3{font-size:21px;margin-bottom:10px}
+.card p{color:var(--cmut);margin:0 0 14px;flex:1}
+.card .btn{margin-top:8px;font-size:13px;padding:14px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.night{background:var(--card);color:var(--cink)}
+.night .in{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;align-items:center}
+.ring{width:min(100%,340px);margin:auto;display:block}
+.ring line{stroke:var(--y);stroke-width:2.6;stroke-linecap:round}
+.ring .cu{stroke:#fff;stroke-width:4.4;animation:blink 1.4s ease-in-out infinite}
+@keyframes blink{50%{opacity:.35}}
+.ring text{fill:#fff;font-family:Unbounded,system-ui,sans-serif;font-weight:800;text-anchor:middle}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
+.stats b{display:block;font:800 30px Unbounded,system-ui,sans-serif;color:var(--y)}
+.stats span{font-size:13px;color:var(--cmut);line-height:1.3;display:block}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;margin-top:40px}
+.step{position:relative;padding-top:48px}
+.step::before{content:"";position:absolute;top:13px;left:40px;right:-24px;border-top:3px dashed var(--ink);opacity:.45}
+.step:last-child::before{display:none}
+.step b{position:absolute;top:0;left:0;width:28px;height:28px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font:800 13px Unbounded,system-ui,sans-serif}
+.step h3{font-size:19px;margin-bottom:6px}
+.step p{margin:0}
+footer{background:#000;color:#fff;padding:48px 0 110px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:26px;justify-content:space-between;align-items:center}
+footer p{margin:6px 0 0;color:#bdbdbd}
+footer .logo{font-size:32px}footer .logo svg{width:62px;height:62px}footer .logo em{color:#FF3B3B}
+footer .btn{margin:0;padding:15px 22px}
+.road{position:fixed;top:0;bottom:0;right:0;width:18px;z-index:4;background:repeating-linear-gradient(#FFD600 0 14px,transparent 14px 30px) center/3px 100% no-repeat,#000}
+.rcar{position:fixed;right:3px;top:0;width:12px;height:26px;z-index:5}
+.fab{position:fixed;right:28px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:6;background:#25D366;color:#fff;font:800 14px Manrope,sans-serif;text-decoration:none;display:flex;gap:8px;align-items:center;padding:13px 18px;border-radius:99px;box-shadow:0 12px 30px -8px rgba(0,0,0,.55)}
+.beacon{animation:blink 1s infinite}
+.spin{transform-origin:120px 60px;animation:spin 9s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (min-width:900px){.hgrid{grid-template-columns:1.1fr .9fr;align-items:center;gap:60px}.console{margin-top:0}.drive{top:-62px}}
+@media (max-width:700px){.step::before{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="cab" viewBox="0 0 240 110">
+<path d="M8 82V72c0-7 5-11 12-13l40-8 24-21c3-3 7-4 11-4h52c6 0 10 2 14 6l22 19 38 7c8 2 12 7 12 14v10c0 3-2 5-5 5H13c-3 0-5-2-5-5z" fill="#FFD600" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+<path d="M78 48l16-15c2-2 4-3 7-3h24v18zM132 30h22c3 0 5 1 7 3l15 15h-44z" fill="#dcecf5" stroke="#000" stroke-width="2"/>
+<rect x="108" y="14" width="34" height="12" rx="3" fill="#000"/><path d="M113 20h24" stroke="#FFD600" stroke-width="3" stroke-dasharray="5 3"/>
+<path d="M14 69h214" stroke="#000" stroke-width="4" stroke-dasharray="5 5"/><path d="M126 48v34" stroke="#000" stroke-width="2"/>
+<rect x="226" y="60" width="7" height="9" rx="2" fill="#fff" stroke="#000" stroke-width="1.5"/><rect x="8" y="60" width="5" height="9" fill="#ff3b30"/>
+<g stroke="#000" stroke-width="3" fill="#2b2b31"><circle cx="62" cy="88" r="17"/><circle cx="182" cy="88" r="17"/></g><circle cx="62" cy="88" r="7" fill="#d0d0d8"/><circle cx="182" cy="88" r="7" fill="#d0d0d8"/>
+</symbol>
+<symbol id="tow" viewBox="0 0 240 120">
+<rect x="72" y="72" width="164" height="12" rx="3" fill="#FFD600" stroke="#000" stroke-width="3"/>
+<path d="M6 94V64c0-3 2-5 5-6l24-6 14-16c2-2 4-3 7-3h14v57z" fill="#fff" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+<path d="M38 54l10-13c1-1 2-2 4-2h14v15z" fill="#dcecf5" stroke="#000" stroke-width="2"/>
+<rect class="beacon" x="50" y="25" width="14" height="8" rx="2" fill="#ff7a00"/>
+<use href="#cab" x="98" y="12" width="134" height="62"/>
+<g stroke="#000" stroke-width="3" fill="#2b2b31"><circle cx="40" cy="98" r="16"/><circle cx="154" cy="98" r="16"/><circle cx="204" cy="98" r="16"/></g><circle cx="40" cy="98" r="6" fill="#d0d0d8"/><circle cx="154" cy="98" r="6" fill="#d0d0d8"/><circle cx="204" cy="98" r="6" fill="#d0d0d8"/>
+</symbol>
+<symbol id="mark" viewBox="0 0 200 200"><circle cx="100" cy="100" r="92" fill="#fff"/><circle cx="100" cy="100" r="81" fill="none" stroke="#E8262B" stroke-width="22"/><rect x="12" y="88" width="176" height="11" fill="#E8262B"/><path d="M80 36h36l8 18H72z" fill="#111"/><path d="M84 40h28l5 11H79z" fill="#fff"/><rect x="66" y="52" width="64" height="22" rx="6" fill="#111"/><rect x="62" y="54" width="5" height="5" rx="1.500" fill="#111"/><rect x="129" y="54" width="5" height="5" rx="1.500" fill="#111"/><g fill="#fff"><rect x="71" y="57" width="11" height="6" rx="2"/><rect x="114" y="57" width="11" height="6" rx="2"/><rect x="88" y="62" width="20" height="7" rx="1.500"/></g><rect x="72" y="71" width="10" height="13" rx="3" fill="#111"/><rect x="114" y="71" width="10" height="13" rx="3" fill="#111"/><path d="M37 77L99.400 96.200L96.600 103.800z" fill="#111"/><path d="M162 74L99.500 103.700L96.500 96.300z" fill="#111"/><circle cx="98" cy="100" r="5.500" fill="#111"/><text x="98" y="163" text-anchor="middle" font-family="Manrope,system-ui,sans-serif" font-weight="500" font-size="76" fill="#111" stroke="#fff" stroke-width="4" paint-order="stroke">24</text></symbol></defs></svg>
+<svg class="road" style="display:none"></svg>
+<div class="road" aria-hidden="true"></div>
+<svg class="rcar" viewBox="0 0 12 26" aria-hidden="true"><rect width="12" height="26" rx="4" fill="#FFD600"/><rect x="2" y="6" width="8" height="5" rx="1" fill="#000"/><rect x="2" y="16" width="8" height="4" rx="1" fill="#000"/><rect x="1" y="23" width="3" height="2" fill="#fff"/><rect x="8" y="23" width="3" height="2" fill="#fff"/></svg>
+
+<header><div class="wrap">
+<a class="logo" href="#top" aria-label="24/7 Drive"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#mark"/></svg><span><em>24/7</em> Drive</span></a>
+<a class="pill" data-msg="Hi 24/7 Drive! I need a ride. Please send me the fee." href="https://wa.me/27655935659" target="_blank" rel="noopener">WhatsApp us</a>
+</div></header>
+
+<main id="top">
+<div class="hgrid">
+<div>
+<p class="status"><i></i><span id="st">Drivers online in Welkom</span></p>
+<h1>Day or night, we’re already on the way.</h1>
+<p class="sub">Cabs, towing, tyre rescue and tours in Welkom and beyond. Tell us where you are and get your fee on WhatsApp.</p>
+</div>
+<div class="console">
+<svg class="drive" viewBox="0 0 240 110" aria-hidden="true"><use href="#cab"/></svg>
+<div class="chips" role="group" aria-label="Service">
+<button class="chip" data-i="0" aria-pressed="true">Local cab</button>
+<button class="chip" data-i="1" aria-pressed="false">Long distance</button>
+<button class="chip" data-i="2" aria-pressed="false">Towing</button>
+<button class="chip" data-i="3" aria-pressed="false">Tyre help</button>
+<button class="chip" data-i="4" aria-pressed="false">Tour</button>
+</div>
+<label for="f" id="la">Pick-up point</label><input id="f" placeholder="Street, suburb or landmark in Welkom" autocomplete="off">
+<div id="wb"><label for="t" id="lb">Drop-off point</label><input id="t" placeholder="Where to?" autocomplete="off"></div>
+<label for="o">Your fare offer in rand (optional)</label><input id="o" inputmode="numeric" placeholder="e.g. 150" autocomplete="off">
+<a class="btn" id="go" href="https://wa.me/27655935659" target="_blank" rel="noopener">Get my fee on WhatsApp</a>
+<p class="note">No app, no sign-up. Your request opens in WhatsApp.</p>
+</div>
+</div>
+
+<div class="check" aria-hidden="true"></div>
+
+<section id="services"><div class="wrap">
+<h2>Pick your ride, or your rescue.</h2>
+<p class="lead">Four services, one number. Tap a service and your request lands on WhatsApp with the details filled in.</p>
+<div class="grid">
+<article class="card">
+<svg class="art" viewBox="0 0 240 120" role="img" aria-label="Yellow cab driving fast"><path d="M0 50h14M0 66h22M0 82h10" stroke="#555" stroke-width="3" stroke-linecap="round"/><use href="#cab" x="22" y="6" width="200" height="92"/><path d="M0 110h240" stroke="#FFD600" stroke-width="2" stroke-dasharray="12 9"/></svg>
+<h3>Cab services</h3>
+<p>Quick local runs around Welkom, or long-distance trips to anywhere you need to be. Any hour.</p>
+<div class="duo">
+<a class="btn" data-msg="Hi 24/7 Drive! I need a *local cab* in Welkom.&#10;Pick-up: &#10;Drop-off: &#10;Please send me the fee." href="https://wa.me/27655935659" target="_blank" rel="noopener">Local</a>
+<a class="btn" data-msg="Hi 24/7 Drive! I need a *long-distance cab*.&#10;Pick-up: &#10;Destination: &#10;Please send me the fee." href="https://wa.me/27655935659" target="_blank" rel="noopener">Long distance</a>
+</div>
+</article>
+<article class="card">
+<svg class="art" viewBox="0 0 240 120" role="img" aria-label="Tow truck carrying a car"><use href="#tow" x="10" y="5" width="220" height="110"/></svg>
+<h3>Towing services</h3>
+<p>Broken down or in an accident? We load up your vehicle and haul it to safety, day or night.</p>
+<a class="btn" data-msg="Hi 24/7 Drive! I need *towing*.&#10;Vehicle location: &#10;Tow it to: &#10;Please send me the fee." href="https://wa.me/27655935659" target="_blank" rel="noopener">Request a tow</a>
+</article>
+<article class="card">
+<svg class="art" viewBox="0 0 240 120" role="img" aria-label="Spinning tyre and warning triangle"><path d="M22 98l22-38 22 38z" fill="#FFD600"/><path d="M44 74v12" stroke="#000" stroke-width="4" stroke-linecap="round"/><circle cx="44" cy="92" r="2.5" fill="#000"/><g class="spin"><circle cx="120" cy="60" r="52" fill="#2b2b31" stroke="#6b6b75" stroke-width="2"/><circle cx="120" cy="60" r="47" fill="none" stroke="#111" stroke-width="8" stroke-dasharray="7 6"/><circle cx="120" cy="60" r="30" fill="#d0d0d8"/><g fill="#2b2b31"><circle cx="120" cy="42" r="5"/><circle cx="137" cy="54" r="5"/><circle cx="131" cy="75" r="5"/><circle cx="109" cy="75" r="5"/><circle cx="103" cy="54" r="5"/></g><circle cx="120" cy="60" r="6" fill="#FFD600"/></g></svg>
+<h3>Tyre roadside assistance</h3>
+<p>Flat or burst tyre? We come to you and fit your spare or fix it on the spot.</p>
+<a class="btn" data-msg="Hi 24/7 Drive! I need *tyre roadside assistance*.&#10;My location: &#10;Problem (flat or burst): &#10;Please send me the fee." href="https://wa.me/27655935659" target="_blank" rel="noopener">Get tyre help</a>
+</article>
+<article class="card">
+<svg class="art" viewBox="0 0 240 120" role="img" aria-label="Cab on a tour road with hills and an acacia tree"><circle cx="180" cy="38" r="22" fill="#FFD600"/><path d="M0 92L44 48l30 28 36-40 44 50 30-22 56 40v18H0z" fill="#2f2f37"/><path d="M0 104h240v16H0z" fill="#1c1c1e"/><path d="M0 113h240" stroke="#FFD600" stroke-width="2" stroke-dasharray="10 8"/><path d="M206 102V82" stroke="#8a6a3a" stroke-width="3"/><ellipse cx="206" cy="78" rx="22" ry="7" fill="#4c7a3a"/><use href="#cab" x="26" y="70" width="76" height="35"/></svg>
+<h3>Tour services</h3>
+<p>Sightseeing, day trips and custom tours with a driver who knows the Free State.</p>
+<a class="btn" data-msg="Hi 24/7 Drive! I’d like to book a *tour*.&#10;Date: &#10;Number of people: &#10;Places to see: &#10;Please send me the fee." href="https://wa.me/27655935659" target="_blank" rel="noopener">Plan my tour</a>
+</article>
+</div>
+</div></section>
+
+<section class="night"><div class="wrap in">
+<svg class="ring" viewBox="0 0 100 100" role="img" aria-label="Clock face with all 24 hours lit">
+<g id="ticks"></g>
+<text x="50" y="44" font-size="3.6">OPEN NOW</text>
+<text x="50" y="57" font-size="10" id="rt">--:--</text>
+<text x="50" y="65" font-size="3.4">WELKOM</text>
+<text x="50" y="24" font-size="3.4">00</text><text x="78" y="51.500" font-size="3.4">06</text><text x="50" y="80" font-size="3.4">12</text><text x="22" y="51.500" font-size="3.4">18</text>
+</svg>
+<div>
+<h2>Welkom never switches off, and neither do we.</h2>
+<p class="lead" style="color:var(--cmut)">All 24 hours are lit. The white mark is the hour it is in Welkom right now, and there is a driver on it.</p>
+<div class="stats"><div><b>24</b><span>hours a day</span></div><div><b>7</b><span>days a week</span></div><div><b>1</b><span>message to reach us</span></div></div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<h2>Three taps to your driver.</h2>
+<div class="steps">
+<div class="step"><b>1</b><h3>Choose what you need</h3><p>Pick a cab, tow, tyre help or tour and tell us where you are.</p></div>
+<div class="step"><b>2</b><h3>Send it on WhatsApp</h3><p>Your details open in a ready-to-send message to 065 593 5659.</p></div>
+<div class="step"><b>3</b><h3>Get your fee and your ride</h3><p>We reply with the fee and send the nearest driver to you.</p></div>
+</div>
+</div></section>
+</main>
+
+<div class="check" aria-hidden="true"></div>
+<footer><div class="wrap">
+<div><a class="logo" href="#top"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#mark"/></svg><span><em>24/7</em> Drive</span></a><p>Welkom, Free State. Open every hour of every day.</p><p>WhatsApp and calls: 065 593 5659</p></div>
+<a class="btn" data-msg="Hi 24/7 Drive! I need a ride. Please send me the fee." href="https://wa.me/27655935659" target="_blank" rel="noopener">Message us on WhatsApp</a>
+</div></footer>
+
+<a class="fab" data-msg="Hi 24/7 Drive! I need help. Please send me the fee." href="https://wa.me/27655935659" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.200-1.400A10 10 0 1 0 12 2z" fill="#fff"/><path d="M8.600 7.600c.3 3.700 3.100 6.500 6.800 6.800l1.200-1.600-2.200-1-.9.900c-1.100-.5-2.100-1.500-2.600-2.600l.9-.9-1-2.200z" fill="#25D366"/></svg>WhatsApp</a>
+
+<script>
+const WA='27655935659',wa=t=>'https://wa.me/'+WA+'?text='+encodeURIComponent(t),$=s=>document.querySelector(s);
+document.querySelectorAll('[data-msg]').forEach(a=>a.href=wa(a.dataset.msg));
+const S=[['Local cab','Pick-up point','Drop-off point','Street, suburb or landmark in Welkom','Where to?'],
+['Long-distance cab','Pick-up point','Destination town or city','Street, suburb or landmark','e.g. Bloemfontein'],
+['Towing','Where is the vehicle?','Tow it to','Street, suburb or landmark','Workshop or address'],
+['Tyre roadside assistance','Where are you stuck?',null,'Street, road or landmark',''],
+['Tour','Pick-up point','Places you want to see','Where should we collect you?','e.g. Willem Pretorius Game Reserve']];
+let cur=0;
+function upd(){const [n,a,b,pa,pb]=S[cur];$('#la').textContent=a;$('#f').placeholder=pa;$('#lb').textContent=b||'';$('#t').placeholder=pb;$('#wb').style.display=b?'':'none';
+const f=$('#f').value.trim(),t=$('#t').value.trim(),o=$('#o').value.trim();
+let m='Hi 24/7 Drive! I need a *'+n+'*.\n';
+if(f)m+=a+': '+f+'\n';if(b&&t)m+=b+': '+t+'\n';if(o)m+='My fare offer: R'+o+'\n';
+m+='Please send me the fee. Thank you.';$('#go').href=wa(m)}
+document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{cur=+c.dataset.i;document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x===c));upd()});
+['#f','#t','#o'].forEach(s=>$(s).addEventListener('input',upd));upd();
+/* live Welkom clock + 24-hour ring */
+let h=0;
+function clock(){try{const d=new Date().toLocaleTimeString('en-GB',{timeZone:'Africa/Johannesburg',hour:'2-digit',minute:'2-digit'});h=(+d.slice(0,2))%24;
+$('#rt').textContent=d;$('#st').textContent=(h>=21||h<5?'Night shift is live':'Drivers online')+' in Welkom, '+d}catch(e){}}
+clock();setInterval(clock,30000);
+const g=$('#ticks'),NS='http://www.w3.org/2000/svg';
+for(let i=0;i<24;i++){const l=document.createElementNS(NS,'line'),cu=i===h;
+l.setAttribute('x1',50);l.setAttribute('x2',50);l.setAttribute('y1',cu?3:6);l.setAttribute('y2',14);
+l.setAttribute('transform','rotate('+i*15+' 50 50)');if(cu)l.setAttribute('class','cu');g.appendChild(l)}
+/* the car on the road drives as you scroll */
+const rc=$('.rcar');
+function pr(){const m=document.documentElement.scrollHeight-innerHeight,p=m>0?Math.min(1,scrollY/m):0;rc.style.transform='translateY('+(p*(innerHeight-26))+'px)'}
+addEventListener('scroll',pr,{passive:true});addEventListener('resize',pr);pr();
+</script>
+</body>
+</html>
